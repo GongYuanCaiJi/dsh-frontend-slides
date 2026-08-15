@@ -1,0 +1,67 @@
+{
+  "name": "dsh-frontend-slides",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：零依赖的 HTML 幻灯片技能包——动画丰富的演示文稿与 PPT 转换（移植自 frontend-slides）",
+  "type": "module",
+  "license": "MIT",
+  "author": "GongYuanCaiJi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GongYuanCaiJi/dsh-frontend-slides.git"
+  },
+  "homepage": "https://github.com/GongYuanCaiJi/dsh-frontend-slides#readme",
+  "bugs": {
+    "url": "https://github.com/GongYuanCaiJi/dsh-frontend-slides/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "slides",
+    "presentations",
+    "html",
+    "design",
+    "powerpoint",
+    "templates",
+    "frontend",
+    "ai-agent",
+    "developer-tools"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "test/"
+  ],
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "prepare": "node --test test/structure.test.mjs",
+    "prepack": "node --test test/verbatim.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-invariants": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-scope": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-skill": "0.1.0-rc.6"
+  }
+}
