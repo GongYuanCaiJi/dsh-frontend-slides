@@ -51,6 +51,12 @@ Per issue #36's BOM requirement ("vendor 的第三方模板包要列進 BOM"):
 The pack files are byte-identical to what upstream `frontend-slides` ships (covered by the
 per-file SHA-256 table below and the `diff -rq` command above).
 
+The dsh adaptation layer (`lib/skills.js`, `lib/frontmatter.js`) is adapted from
+[`dsh-lens@0.2.5`](https://www.npmjs.com/package/dsh-lens) (MIT — `Copyright (c) 2026 dsh-lens
+contributors`), the community-standard bundled-skill provider pattern; the MIT notice is retained
+in the file headers. No dsh-lens code is redistributed in this package (the adapter is written
+from the pattern, not copied from the package), so it carries no install-time obligations.
+
 ### Verifying the verbatim claim yourself
 
 The README states that all shipped skill files are byte-identical to upstream. You do not have

@@ -76,6 +76,8 @@ dsh plugin --profile <name> add .
 MIT。上游 [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 `Copyright (c) 2025 Zara Zhang`，本移植 `Copyright (c) 2026 GongYuanCaiJi`。见 [LICENSE](LICENSE)。
 
+授权/合规问题请开 issue：https://github.com/GongYuanCaiJi/dsh-frontend-slides/issues
+
 ---
 
 ## English
@@ -147,3 +149,5 @@ the byte-identical root-level working copies are outside the upstream plugin sur
 
 MIT. Upstream [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
 `Copyright (c) 2025 Zara Zhang`; this port `Copyright (c) 2026 GongYuanCaiJi`. See [LICENSE](LICENSE).
+
+For license or compliance questions, open an issue: https://github.com/GongYuanCaiJi/dsh-frontend-slides/issues
